@@ -1,0 +1,61 @@
+@import "mixins.scss";
+@import "variables.scss";
+
+
+@import "global/fonts.scss";
+@import "global/layout.scss";
+
+@import "blocks/header.scss";
+@import "blocks/inner.scss";
+@import "blocks/footer.scss";
+
+@import "styleguide.scss";
+
+body{
+  font-family: MuseoSansCyrl500;
+  color: $key-color;
+}
+
+input[type=number] {
+  -moz-appearance:textfield;
+  -webkit-appearence: none;
+}
+
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.btn{
+  width: 100%;
+  outline: none;
+  border: none;
+  border-radius: 3px;
+  font-family: "MuseoSansCyrl300";
+  font-size: .8rem;
+  font-weight: 900;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  text-align: center;
+  cursor: pointer;
+  text-decoration: none;
+  display: block;
+  box-sizing: border-box;
+  @include main-breakpoint{
+    font-size: 1.5rem;
+  }
+}
+.clearfix{
+  content: "";
+  display: table;
+  clear: both;
+}
+section{
+  border-top: 1px solid #dfdfdf;
+}
+section:focus{
+  outline: none;
+}

@@ -1,0 +1,22 @@
+.row {
+  max-width: 1220px;
+  display: block;
+  margin: 0 auto;
+  @include main-breakpoint{
+    padding: 0 1.6rem;
+  }
+}
+:root {
+  @include main-breakpoint{
+    font-size: 10px;
+  }
+}
+body{
+  min-width: 300px;
+  position: relative;
+}
+@media(min-width: 960px) and (max-width: 1220px){
+  .row {
+    padding: 0 1rem;
+  }
+}

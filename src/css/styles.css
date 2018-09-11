@@ -1,0 +1,84 @@
+@font-face {
+  font-family: "MuseoSansCyrl300";
+  src: url("../fonts/MuseoSansCyrl_300.ttf");
+}
+
+.row {
+  max-width: 1220px;
+  display: block;
+  margin: 0 auto;
+}
+
+body {
+  min-width: 300px;
+  position: relative;
+}
+
+body {
+  font-family: MuseoSansCyrl500;
+  color: #232323;
+}
+
+input[type=number] {
+  -moz-appearance: textfield;
+  -webkit-appearence: none;
+}
+
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.btn {
+  width: 100%;
+  outline: none;
+  border: none;
+  border-radius: 3px;
+  font-family: "MuseoSansCyrl300";
+  font-size: .8rem;
+  font-weight: 900;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  text-align: center;
+  cursor: pointer;
+  text-decoration: none;
+  display: block;
+  box-sizing: border-box;
+}
+
+.clearfix {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+section {
+  border-top: 1px solid #dfdfdf;
+}
+
+section:focus {
+  outline: none;
+}
+
+@media (max-width: 961px) {
+  .row {
+    padding: 0 1.6rem;
+  }
+
+  :root {
+    font-size: 10px;
+  }
+
+  .btn {
+    font-size: 1.5rem;
+  }
+}
+
+@media (min-width: 960px) and (max-width: 1220px) {
+  .row {
+    padding: 0 1rem;
+  }
+}
